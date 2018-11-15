@@ -13,12 +13,17 @@ const source = fs.readFileSync(tplPath)
 const template = Handlebars.compile(source.toString())
 // const source =fs.readFileSync('../template/dir.html')
 
+const mime = require('./mime')
+
 module.exports = async function (request, respond, filePath) {
     try {
         const stats = await stat(filePath)
         if (stats.isFile()) {
+            const contentType = mime(filePath)
+
             respond.statusCode = 200;
-            respond.setHeader('Content-Type', 'text/plain')
+            respond.setHeader('Content-Type', contentType)
+            // respond.setHeader('Content-Type', 'text/plain')
             fs.createReadStream(filePath).pipe(respond)
         } else if (stats.isDirectory()) {
             const files = await readdir(filePath)
@@ -29,7 +34,13 @@ module.exports = async function (request, respond, filePath) {
             const data = {
                 title: path.basename(filePath),
                 dir: dir ? `/${dir}` : '',
-                files
+                files: files.map(file => {
+                    return {
+                        file,
+                        icon: mime(file)
+                    }
+                })
+
             }
 
             // console.log(data)
