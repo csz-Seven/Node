@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7a777e8-0e89-4079-b606-0c13b0ab4e22" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/helper/mime.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/helper/route.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helper/route.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/template/dir.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/dir.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -31,20 +28,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="route.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="route.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/helper/route.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="844">
-              <caret line="39" column="32" lean-forward="true" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
+            <state relative-caret-position="484">
+              <caret line="24" selection-start-line="24" selection-end-line="25" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mime.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="mime.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/helper/mime.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="919">
-              <caret line="484" column="29" lean-forward="true" selection-start-line="484" selection-start-column="29" selection-end-line="484" selection-end-column="29" />
+            <state relative-caret-position="64">
+              <caret line="459" column="36" lean-forward="true" selection-start-line="459" selection-start-column="36" selection-end-line="459" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -52,8 +49,8 @@
       <file leaf-file-name="dir.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/template/dir.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+            <state relative-caret-position="456">
+              <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -98,9 +95,9 @@
         <option value="$PROJECT_DIR$/src/app.js" />
         <option value="$PROJECT_DIR$/src/tempalte/dir.tpl.html" />
         <option value="$PROJECT_DIR$/src/tempalte/dir.html" />
-        <option value="$PROJECT_DIR$/src/helper/route.js" />
-        <option value="$PROJECT_DIR$/src/template/dir.html" />
         <option value="$PROJECT_DIR$/src/helper/mime.js" />
+        <option value="$PROJECT_DIR$/src/template/dir.html" />
+        <option value="$PROJECT_DIR$/src/helper/route.js" />
       </list>
     </option>
   </component>
@@ -240,12 +237,12 @@
       <workItem from="1540972255040" duration="7463000" />
       <workItem from="1541575833804" duration="3085000" />
       <workItem from="1541658646453" duration="1214000" />
-      <workItem from="1541990625986" duration="23799000" />
+      <workItem from="1541990625986" duration="24228000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35561000" />
+    <option name="totallyTimeSpent" value="35990000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -406,22 +403,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/template/dir.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/helper/route.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="844">
-          <caret line="39" column="32" lean-forward="true" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
+        <state relative-caret-position="456">
+          <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/helper/mime.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="919">
-          <caret line="484" column="29" lean-forward="true" selection-start-line="484" selection-start-column="29" selection-end-line="484" selection-end-column="29" />
+        <state relative-caret-position="64">
+          <caret line="459" column="36" lean-forward="true" selection-start-line="459" selection-start-column="36" selection-end-line="459" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/helper/route.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="24" selection-start-line="24" selection-end-line="25" />
         </state>
       </provider>
     </entry>

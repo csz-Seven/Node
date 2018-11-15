@@ -22,7 +22,7 @@ module.exports = async function (request, respond, filePath) {
             const contentType = mime(filePath)
 
             respond.statusCode = 200;
-            respond.setHeader('Content-Type', contentType)
+                respond.setHeader('Content-Type', contentType + ';charset=utf-8')
             // respond.setHeader('Content-Type', 'text/plain')
             fs.createReadStream(filePath).pipe(respond)
         } else if (stats.isDirectory()) {
