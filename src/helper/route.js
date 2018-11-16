@@ -6,6 +6,7 @@ const stat = promisity(fs.stat)
 const readdir = promisity(fs.readdir)
 const config = require('../config/defaultConfig')
 const compress = require('../helper/compress')
+const range = require('../helper/range')
 
 const tplPath = path.join(__dirname, '../template/dir.html')
 const source = fs.readFileSync(tplPath)
@@ -22,13 +23,22 @@ module.exports = async function (request, respond, filePath) {
         if (stats.isFile()) {
             const contentType = mime(filePath)
 
-            respond.statusCode = 200;
+            // respond.statusCode = 200;
             respond.setHeader('Content-Type', contentType + ';charset=utf-8')
             // respond.setHeader('Content-Type', 'text/plain')
 
+            let rs;
+            const {code, start, end} = range(stats.size, request, respond)
+            if (code === 200) {
+                respond.statusCode = 200;
+                rs = fs.createReadStream(filePath)
+            } else {
+                respond.statusCode = 206;
+                rs = fs.createReadStream(filePath, {start, end})
+            }
+
             // 6.8 compress
             // fs.createReadStream(filePath).pipe(respond)
-            let rs = fs.createReadStream(filePath)
             // if (filePath.match(config.compress)) {
             //     compress(rs, request, respond)
             // }
