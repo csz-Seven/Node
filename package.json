@@ -1,0 +1,28 @@
+{
+  "name": "lgq-static-server",
+  "version": "0.1.0",
+  "description": "Node static web server",
+  "main": "src/app.js",
+  "bin":{
+    "lgq-static-server": "bin/lgq-static-server"
+  },
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "handlebars": "^4.0.12",
+    "yargs": "^12.0.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/csz-Seven/Node.git"
+  },
+  "author": "ricky.lai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/csz-Seven/Node/issues"
+  },
+  "homepage": "https://github.com/csz-Seven/Node#readme"
+}
